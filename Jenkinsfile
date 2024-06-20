@@ -1,10 +1,10 @@
 pipeline{
     agent slave1
     tools {
-        maven "maven3.9.2"
+        maven "maven3.9.7"
     }
     stages{
-        stage("clonefromsourcecode"){
+        stage('clonefromsourcecode'){
             steps{
                 sh "echo 'clone latest code'"
                 sh "echo 'build developing for dev environment'"
